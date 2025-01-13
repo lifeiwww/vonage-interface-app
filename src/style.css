@@ -1,0 +1,411 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8; /* Global background color */
+  font-family: "72", sans-serif;
+  height: 100%;
+}
+
+#root {
+  padding: 0px 25px; /* Global horizontal padding */
+  min-height: 100vh; /* Ensures it takes full screen height */
+  box-sizing: border-box; /* Include padding in total width/height calculations */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f6f8; /* Same background color to match body */
+}
+
+/* General Layout */
+.enter-number {
+  background-color: #f5f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.enter-number-container {
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Content Section */
+.title {
+  font-family: "72 Black", sans-serif; /* Change to 72 Black */
+  font-size: 28px;
+  font-weight: 900; /* Use 900 for Black weight */
+  text-align: center;
+  color: #223548;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "72", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #223548;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-top: 45px; /* Add vertical space above the InputForm */
+  margin-bottom: 75px; /* Add vertical space below the InputForm */
+}
+
+.input-section {
+  margin-bottom: 20px;
+  text-align: left; /* Aligns the label and input to the left */
+}
+
+.label {
+  font-family: "72", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #223548;
+  margin-bottom: 5px;
+}
+
+/* Input Field Styles */
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #A8A8A8;
+  border-radius: 8px;
+  font-family: "72", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #223548;
+  outline: none; /* Removes the default browser outline */
+}
+
+.input::placeholder {
+  color: #A8A8A8;
+  font-family: "72 Light", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.input:focus {
+  border: 1px solid #6C757D; /* Dark gray border on focus */
+  outline: none; /* Removes default outline for cleaner look */
+}
+
+.error-message {
+  color: #d9534f; /* Red color for errors */
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/* Legal Agreement Section */
+.legal {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkBox-text {
+  font-family: "72", sans-serif;
+  font-size: 12px;
+  color: #5B738B;
+}
+
+.checkBox-text a {
+  color: #0070f2;
+  text-decoration: none;
+}
+
+.checkBox-text a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+}
+
+/* Footer Styles */
+.sap-logo {
+  width: clamp(6vw, 42px, 7vh); /* Minimum 6vw, default 42px, max 7% of viewport height */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0px; /* Keep consistent spacing */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: 20px; /* Add margin to separate it from the rest of the content */
+  text-align: center;
+}
+
+.terms {
+  font-family: "72", sans-serif;
+  font-size: 12px;
+  color: #5B738B;
+}
+
+.terms a {
+  color: #0070f2;
+  text-decoration: none;
+}
+
+/* Verification Screen Styles */
+.verification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between loading and other sections */
+}
+
+.loading-area {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Align items horizontally */
+  margin: 40px 0 40px; /* Top: 40px, Bottom: 60px */
+  gap: 20px; /* Add spacing between the items */
+  width: 100%; /* Ensure full-width alignment */
+}
+
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg); /* Rotate for progress start point */
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 2;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #0070f2; /* Blue color */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 0, 100;
+  transition: stroke-dasharray 0.3s linear;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #223548;
+}
+
+.complete-icon {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 120px; /* Match the progress circle's width */
+  height: 120px; /* Match the progress circle's height */
+}
+
+
+/* Vonage Notification Section */
+.vonage-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Adjust spacing */
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  border-radius: 12px;
+  padding: 6px 6px;
+  gap: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 90%;
+}
+
+.vonage-logo {
+  width: clamp(70px, 15%, 82.19px); /* Responsive size */
+  height: auto;
+}
+
+.notification-text {
+  color: rgba(255, 255, 255, 0.9); /* Light white text */
+  font-family: "72", sans-serif;
+  font-size: 11px; /* Slightly smaller text */
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Call Confirmation Styles */
+.call-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.call-confirmation .main-content {
+  margin-bottom: 24px;
+}
+
+.call-confirmation .title {
+  font-family: "72 Black", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #223548;
+}
+
+.call-confirmation .description {
+  font-family: "72", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #223548;
+  line-height: 1.5;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 16px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+  max-width: 360px;
+  width: 100%;
+}
+
+.info-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.info-text {
+  text-align: left;
+}
+
+.info-text strong {
+  font-family: "72 Black", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #223548;
+}
+
+.info-text ul {
+  font-family: "72", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475e75;
+  list-style-type: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.info-text ul li {
+  margin-bottom: 4px;
+}
+
+/*Not Ready link*/
+.not-ready {
+  font-family: "72", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7f7f7f;
+  text-decoration: underline;
+}
+
+.not-ready-link {
+  color: #7f7f7f;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-ready-link:hover {
+  color: #223548;
+}
+
+/* Not Ready Screen Styles */
+.not-ready-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f6f8;
+  min-height: 100vh;
+  padding: 125px 20px; /* Top and bottom padding */
+  box-sizing: border-box;
+}
+
+/* Content Section */
+.not-ready-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Increase gap between buttons */
+  align-items: center;
+  width: 100%;
+  margin-top: 80px; /* Larger space from the header */
+  margin-bottom: 80px; /* Larger space from the footer */
+}
+
+/* Primary Button */
+.primary-button {
+  background-color: #0070f2;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.primary-button:hover {
+  background-color: #0059c9;
+}
+
+/* Secondary Button */
+.secondary-button {
+  background-color: #D5DADD;
+  color: #556B82;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.secondary-button:hover {
+  background-color: #C4CACE; /* Slightly darker on hover */
+  color: #3D505F; /* Slightly darker text on hover */
+}
+

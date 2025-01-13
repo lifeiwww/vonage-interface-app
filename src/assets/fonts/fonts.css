@@ -1,0 +1,19 @@
+@font-face {
+    font-family: '72';
+    src: url('./72-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: '72';
+    src: url('./72-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  html {
+    font-family: '72', Arial, sans-serif;
+    font-size: 16px;
+  }
+  
