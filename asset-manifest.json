@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e458c9d0.css",
+    "main.js": "/static/js/main.94519ed0.js",
+    "static/media/72-Regular.ttf": "/static/media/72-Regular.922006b9ffcda4643e15.ttf",
+    "static/media/72-Bold.ttf": "/static/media/72-Bold.1076391b0b1a725bcc5e.ttf",
+    "static/media/VonagePOE.png": "/static/media/VonagePOE.ff84470c115b79ebf354.png",
+    "static/media/complete.svg": "/static/media/complete.582a16b7d5196774add14191b1b5657e.svg",
+    "index.html": "/index.html",
+    "main.e458c9d0.css.map": "/static/css/main.e458c9d0.css.map",
+    "main.94519ed0.js.map": "/static/js/main.94519ed0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e458c9d0.css",
+    "static/js/main.94519ed0.js"
+  ]
+}
