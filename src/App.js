@@ -6,9 +6,11 @@ import NotReadyScreen from "./layouts/NotReadyScreen";
 
 function App() {
   const [screen, setScreen] = useState("EnterNumber");
+  const [phoneNumber, setPhoneNumber] = useState("");  // Store the phone number
 
   // Navigate to Verification Screen after submitting the phone number
-  const handleEnterNumberSubmit = () => {
+  const handleEnterNumberSubmit = (number) => {
+    setPhoneNumber(number);  // Save the phone number
     setScreen("Verification");
   };
 
@@ -31,7 +33,7 @@ function App() {
         <VerificationScreen onComplete={handleVerificationComplete} />
       )}
       {screen === "ConfirmCall" && (
-        <ConfirmCall onRedirect={handleNotReady} />
+        <ConfirmCall phoneNumber={phoneNumber} onRedirect={handleNotReady} />
       )}
       {screen === "NotReady" && <NotReadyScreen />}
     </div>

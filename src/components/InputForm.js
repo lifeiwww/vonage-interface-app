@@ -33,7 +33,7 @@ const InputForm = ({ onSubmit }) => {
         <label className="label">Phone Number *</label>
         <input
           className="input"
-          placeholder="(123)-456-7890"
+          placeholder="e.g., 1 1234567899"
           value={phoneNumber}
           onChange={(e) => {
             setPhoneNumber(e.target.value); // Update phone number state
