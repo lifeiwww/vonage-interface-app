@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/vonage-interface-app/static/css/main.dcd05ac2.css",
-    "main.js": "/vonage-interface-app/static/js/main.378bae88.js",
+    "main.js": "/vonage-interface-app/static/js/main.a5917d3b.js",
     "static/media/72-Regular.ttf": "/vonage-interface-app/static/media/72-Regular.922006b9ffcda4643e15.ttf",
     "static/media/72-Bold.ttf": "/vonage-interface-app/static/media/72-Bold.1076391b0b1a725bcc5e.ttf",
     "static/media/VonagePOE.png": "/vonage-interface-app/static/media/VonagePOE.ff84470c115b79ebf354.png",
     "static/media/complete.svg": "/vonage-interface-app/static/media/complete.582a16b7d5196774add14191b1b5657e.svg",
     "index.html": "/vonage-interface-app/index.html",
     "main.dcd05ac2.css.map": "/vonage-interface-app/static/css/main.dcd05ac2.css.map",
-    "main.378bae88.js.map": "/vonage-interface-app/static/js/main.378bae88.js.map"
+    "main.a5917d3b.js.map": "/vonage-interface-app/static/js/main.a5917d3b.js.map"
   },
   "entrypoints": [
     "static/css/main.dcd05ac2.css",
-    "static/js/main.378bae88.js"
+    "static/js/main.a5917d3b.js"
   ]
 }
