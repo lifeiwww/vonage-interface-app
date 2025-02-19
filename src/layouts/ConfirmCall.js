@@ -59,7 +59,7 @@ const ConfirmCall = ({ onRedirect, phoneNumber }) => {
           <>
             Your phone number has been verified.
             <br />
-            Our support team will call you in {countdown} second{countdown !== 1 ? "s" : ""}.
+            AI communication agent will call you in {countdown} second{countdown !== 1 ? "s" : ""}.
           </>
         }
       />

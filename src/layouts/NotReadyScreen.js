@@ -16,7 +16,7 @@ const NotReadyScreen = () => {
     <div className="not-ready-screen">
       <Header
         title="Need a different time?"
-        subtitle="Let our support agent know when to reach you"
+        subtitle="Let our AI communication agent know when to reach you"
       />
 
       <div className="not-ready-content">
