@@ -9,7 +9,7 @@ const EnterNumber = ({ onSubmit }) => {
     <div className="enter-number">
       <div className="enter-number-container">
         <Header
-          title="Before connecting you with the AI Communication Agent"
+          title="Before connecting you with the AI communication agent"
           subtitle="Please enter your phone number. We'll verify and connect you with our agent right away."
         />
         {/* Pass the callback to InputForm */}

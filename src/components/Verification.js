@@ -1,4 +1,3 @@
-//Component of Phone number verification, can be replace to Vonage API later
 import React, { useState, useEffect } from "react";
 import "../style.css";
 import VonageLogo from "../assets/images/VonagePOE.png"; // Vonage logo for notification section
@@ -86,7 +85,9 @@ const Verification = ({ onComplete }) => {
             className="vonage-logo"
           />
           <span className="notification-text">
-            Authenticate through Number Verification API
+            {loadingComplete
+              ? "Authenticated through Number Verification API"
+              : "Authenticating through Number Verification API"}
           </span>
         </div>
       </div>
