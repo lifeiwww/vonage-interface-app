@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/vonage-interface-app/static/css/main.6766770f.css",
-    "main.js": "/vonage-interface-app/static/js/main.70af0aa7.js",
+    "main.js": "/vonage-interface-app/static/js/main.e28c3258.js",
     "static/media/72-Regular.ttf": "/vonage-interface-app/static/media/72-Regular.922006b9ffcda4643e15.ttf",
     "static/media/72-Bold.ttf": "/vonage-interface-app/static/media/72-Bold.1076391b0b1a725bcc5e.ttf",
     "static/media/VonagePOE.png": "/vonage-interface-app/static/media/VonagePOE.ff84470c115b79ebf354.png",
     "static/media/complete.svg": "/vonage-interface-app/static/media/complete.582a16b7d5196774add14191b1b5657e.svg",
-    "static/media/error.svg": "/vonage-interface-app/static/media/error.f528b3cca8aa270f36f78775ec0905ee.svg",
     "index.html": "/vonage-interface-app/index.html",
     "main.6766770f.css.map": "/vonage-interface-app/static/css/main.6766770f.css.map",
-    "main.70af0aa7.js.map": "/vonage-interface-app/static/js/main.70af0aa7.js.map"
+    "main.e28c3258.js.map": "/vonage-interface-app/static/js/main.e28c3258.js.map"
   },
   "entrypoints": [
     "static/css/main.6766770f.css",
-    "static/js/main.70af0aa7.js"
+    "static/js/main.e28c3258.js"
   ]
 }
